@@ -1,0 +1,6 @@
+{
+    "default"               : "fonts/open_sans/r.ttf",
+    "itallic"          		: "fonts/open_sans/i.ttf",
+    "bold"        			: "fonts/open_sans/b.ttf",
+    "bold_itallic"    		: "fonts/open_sans/bi.ttf"
+}

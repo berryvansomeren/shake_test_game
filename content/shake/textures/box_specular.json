@@ -1,0 +1,5 @@
+{
+    "texture"               : "textures/box_specular.png",
+    "type"                  : "specular",
+    "interpolation_mode"    : "linear"
+}

@@ -1,0 +1,6 @@
+{
+    "texture"               : "textures/palette.png",
+    "image_format"          : "rgb",
+    "texture_format"        : "rgb",
+    "interpolation_mode"    : "nearest"
+}

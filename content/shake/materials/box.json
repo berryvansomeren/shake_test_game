@@ -1,0 +1,5 @@
+{
+    "diffuse"   : "textures/box_diffuse.json",
+    "specular"  : "textures/box_specular.json",
+    "shininess" : 32
+}

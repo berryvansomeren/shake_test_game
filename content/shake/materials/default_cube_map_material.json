@@ -1,0 +1,10 @@
+{
+    "shader"	: "shaders/default_cube_map_shader.glsl",
+	"uniforms"	:
+	[
+		{
+            "type" : "cube_map",
+            "path" : "cube_maps/default_cube_map.json"
+		}
+	]
+}

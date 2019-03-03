@@ -1,0 +1,5 @@
+{
+    "texture"               : "textures/container.jpg",
+    "type"                  : "diffuse",
+    "interpolation_mode"    : "linear"
+}

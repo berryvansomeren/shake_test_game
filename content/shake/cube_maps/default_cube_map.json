@@ -1,0 +1,13 @@
+{
+    "left"      : "textures/skybox/left.jpg",
+    "right"     : "textures/skybox/right.jpg",
+    "top"       : "textures/skybox/top.jpg",
+    "bottom"    : "textures/skybox/bottom.jpg",
+    "front"     : "textures/skybox/front.jpg",
+    "back"      : "textures/skybox/back.jpg",
+
+    "image_format"          : "rgb",
+    "texture_format"		    : "rgb",
+    "interpolation_mode"    : "linear",
+    "generate_mip_maps"     : false
+}

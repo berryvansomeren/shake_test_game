@@ -1,0 +1,5 @@
+{
+    "texture"               : "textures/box_diffuse.png",
+    "type"                  : "diffuse",
+    "interpolation_mode"    : "linear"
+}

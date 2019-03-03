@@ -1,0 +1,10 @@
+{
+ "shader"	: "shaders/default_voxel_shader.glsl",
+	"uniforms"	:
+	[
+		{
+			"type" : "texture",
+            "path" : "voxel_models/default_voxel_model.vox"
+		}
+	]
+}
