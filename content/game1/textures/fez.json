@@ -1,0 +1,7 @@
+{
+    "texture"               : "textures/fez.png",
+    "image_format"          : "rgb",
+    "texture_format"		    : "rgb",
+    "interpolation_mode"    : "linear",
+    "generate_mip_maps"     : false
+}

@@ -1,0 +1,11 @@
+{
+  "shader": "shaders/default_sprite_shader.glsl",
+  "uniforms": [
+    {
+      "type": "texture",
+      "path": "textures/fez.json"
+    }
+  ]
+}
+
+

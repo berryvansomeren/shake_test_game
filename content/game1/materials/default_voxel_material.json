@@ -1,0 +1,11 @@
+{
+  "shader": "shaders/default_voxel_shader.glsl",
+  "uniforms": [
+    {
+      "type": "texture",
+      "path": "voxel_models/procedure/nature.vox"
+    }
+  ]
+}
+
+
