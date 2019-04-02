@@ -1,4 +1,3 @@
-
 #ifdef SHAKE_VERTEX_SHADER
 //================================================================
 // VERTEX
@@ -13,15 +12,16 @@ out vec3 var_tex3;
 void main()
 {
 	// The OpenGL cubemap orientation is defined using a Z-up coordinate system.
-	// When inside the cube, it seems as if the handed-ness of the system is flipped, 
-	// and thus front, and back are swapped. 
-	// In addition, since textures are then seen from inside the cube instead of from outside, 
+	// In addition, since textures are seen from inside the cube instead of from outside, 
 	// the x coordinate needs to be flipped. 
+	// Therefore, in the Y-up system, we use ( -x, y, z ).
 	// However, Shake uses a Z-up coordinate system,
-	// and thus we also need a rotation around the X-axis. 
-	// All transformations for interpreting the cubemap correctly, 
-	// and then transforming it to our own system, combined, 
-	// result in simply swapping the y and z coordinates.
+	// and thus we also need a rotation around the X-axis,
+	// resulting in ( -x, z, -y )
+	// But then, we also have the issue that our positive y-axis points into the screen,
+	// while in the old system, the z-axis pointed out from the screen. 
+	// Rotating 180 degrees around the y-axis, is a matter of negating the x and the new z,
+	// resulting in simply ( x, z, y ). Quite elegant. 
 
 	var_tex3 = in_pos3.xzy;
 
