@@ -29,7 +29,7 @@ class TestSystem( pyshake.ecs.PythonSystem ):
 
     #----------------------------------------------------------------
     # This will be called by the system manager at every game update
-    def update( self, dt: float, world: pyshake.ecs.World, entity_id_set: pyshake.ecs.EntityIdVec ) -> None:
+    def update( self, dt: float, world: pyshake.ecs.World, entity_id_set: [ pyshake.ecs.EntityId ] ) -> None:
 
         pyshake.core.log( "Hello World, from TestSystem in Python!" )
 
