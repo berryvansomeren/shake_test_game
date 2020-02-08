@@ -2,7 +2,7 @@ import sys
 sys.path.append( "C:/Users/Berry/Documents/development/shake3/build/" )
 import pyshake
 
-from pyshake.core import Vec3
+from pyshake.core import log
 from pyshake.hid import Keyboard
 
 
@@ -18,7 +18,7 @@ class Game:
             lambda      : self.destroy(),
             self.width, 
             self.height,
-            "GLSL SDF Ray Marching" 
+            "Pyshake Demo Game"
         )
 
     #----------------------------------------------------------------
@@ -27,6 +27,7 @@ class Game:
 
     #----------------------------------------------------------------
     def init( self ) -> None:
+        log( "Game Start" )
         # content_manager = self.application.get_content_manager()
         # content_manager.host_content_directory( "" )
         # main_shader = content_manager.get_or_load__program( "shaders/default_primitive_2d_shader.glsl" )
@@ -38,6 +39,10 @@ class Game:
 
     #----------------------------------------------------------------
     def update( self, dt : float ) -> None:
+
+        if Keyboard.is_down( Keyboard.Key.Escape ):
+            self.application.close()
+
         # v = dt * 0.001
         # translations = [
         #     ( Keyboard.Key.W, Vec3(  0,  0, -v ) ),
@@ -61,6 +66,7 @@ class Game:
 
     #----------------------------------------------------------------
     def destroy( self ) -> None:
+        log( "Game Exit" )
         pass
 
 
